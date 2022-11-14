@@ -41,7 +41,7 @@ function Cart(props) {
         <button className="button--alt" onClick={props.onHideCart}>
           Close
         </button>
-        {hasItems && <button className="button">Order</button>}
+        {hasItems && <button className="button" onClick={console.log("Ordering...")}>Order</button>}
       </div>
     </Modal>
   );
